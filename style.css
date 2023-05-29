@@ -1,0 +1,82 @@
+body{
+    width: auto;
+    height: auto;
+    margin: auto;
+    background-color: antiquewhite;
+    text-align: center;
+}
+h1{
+    text-align: justify;
+    position: absolute;
+    top: 4%;
+    left: 59%; 
+}
+section{
+    text-align: center;
+    width: 70vh;
+    height: 70vh;
+    position: absolute;
+  top: 27%;
+  left: 70%;
+  transform: translate(-50%, -20%);
+} 
+
+img{
+    margin: auto;
+    border-radius: 50%;
+    position: absolute;
+    top: 8%;
+    left: 23%;
+}
+div{
+    width: 300px;
+    height: 5px;
+    background-color: blueviolet;
+    border-radius: 2px;
+    position: absolute;
+    left: 75px;
+    top: 50px;
+}
+h3{
+    display: grid;
+    grid-template-columns: 300px 300px 300px 300px;
+    grid-template-rows: 200px 100px 50px;
+    grid-template-areas: "a a a a"
+                            "b b b b"
+                            "c d e f"
+                           ;
+  position: absolute;
+   left: 10px;
+  top: 700px; 
+}
+
+article{
+    border: ridge red;
+}
+article:nth-of-type(1){
+    grid-area: a;
+    background: url(https://www.lambdatest.com/blog/wp-content/uploads/2019/03/Artboard-14.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: none;
+}
+
+article:nth-of-type(2){
+    grid-area: b;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-style: italic;
+    background-color: blueviolet;
+    border: none;
+}
+article:nth-of-type(3){
+    grid-area: c;
+}
+article:nth-of-type(4){
+    grid-area: d;
+}
+article:nth-of-type(5){
+    grid-area: e;
+}
+article:nth-of-type(6){
+    grid-area: f;
+}
